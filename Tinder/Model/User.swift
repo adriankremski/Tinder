@@ -13,7 +13,7 @@ struct User : ProducesCardViewModel{
     let name: String
     let age: Int
     let profession: String
-    let imageName: String
+    let imageNames: [String]
     
     func toCardViewModel() -> CardViewModel {
         let nameAttributes = [
@@ -39,7 +39,7 @@ struct User : ProducesCardViewModel{
         nameAttributedText.append(professionAttributedText)
         
         return CardViewModel(
-            imageName: imageName, attributedString: nameAttributedText, textAlignment: .left
+            imageNames: imageNames, attributedString: nameAttributedText, textAlignment: .left
         )
     }
 }

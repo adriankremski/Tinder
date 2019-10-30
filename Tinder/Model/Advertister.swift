@@ -30,7 +30,7 @@ struct Advertiser : ProducesCardViewModel{
         titleAttrText.append(subtitleAttrText)
         
         return CardViewModel(
-            imageName: posterPhotoName, attributedString: titleAttrText, textAlignment: .center
+            imageNames: [posterPhotoName], attributedString: titleAttrText, textAlignment: .center
         )
     }
 }
