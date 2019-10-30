@@ -18,6 +18,8 @@ class CardView: UIView {
         }
     }
     
+    fileprivate let gradientLayer = CAGradientLayer()
+
     fileprivate let imageView = UIImageView(image: UIImage(named: "lady5c"))
     
     fileprivate let informationLabel = UILabel()
@@ -26,7 +28,31 @@ class CardView: UIView {
     
     override init(frame: CGRect = .zero) {
         super.init(frame: frame)
-        
+        setupLayout()
+        let panGestureRecognier = UIPanGestureRecognizer(target: self, action: #selector(handlePan))
+        addGestureRecognizer(panGestureRecognier)
+    }
+    
+    override func layoutSubviews() {
+        gradientLayer.frame = self.frame
+    }
+    
+    @objc fileprivate func handlePan(gesture: UIPanGestureRecognizer) {
+        switch gesture.state {
+            case .began:
+                superview?.subviews.forEach({ (view) in
+                    view.layer.removeAllAnimations()
+                })
+            case .changed:
+                handleChangedPanGesture(gesture)
+            case .ended:
+                handledEndedPanGesture(gesture)
+            default:
+                ()
+        }
+    }
+    
+    fileprivate func setupLayout() {
         layer.cornerRadius = 10
         clipsToBounds = true
         
@@ -40,24 +66,12 @@ class CardView: UIView {
         informationLabel.textColor = .white
         informationLabel.numberOfLines = 0
         informationLabel.anchor(top: nil, leading: self.leadingAnchor, bottom: self.bottomAnchor, trailing: self.trailingAnchor, padding: .init(top: 0, left: 16, bottom: 24, right: 16))
-        
-        let panGestureRecognier = UIPanGestureRecognizer(target: self, action: #selector(handlePan))
-        addGestureRecognizer(panGestureRecognier)
     }
     
     fileprivate func setupGradientLayer() {
-        
-    }
-    
-    @objc fileprivate func handlePan(gesture: UIPanGestureRecognizer) {
-        switch gesture.state {
-            case .changed:
-                handleChangedPanGesture(gesture)
-            case .ended:
-                handledEndedPanGesture(gesture)
-            default:
-                ()
-        }
+        gradientLayer.colors = [UIColor.clear.cgColor, UIColor.black.cgColor]
+        gradientLayer.locations = [0.5, 1.1]
+        layer.addSublayer(gradientLayer)
     }
     
     fileprivate func handleChangedPanGesture(_ gesture: UIPanGestureRecognizer) {
