@@ -53,6 +53,10 @@ class CardView: UIView {
         addGestureRecognizer(tapGestureRecognizer)
     }
     
+    required init?(coder: NSCoder) {
+        fatalError()
+    }
+    
     @objc fileprivate func handleTap(_ gesture: UITapGestureRecognizer) {
         if (viewModel.imageNames.count <= 1) {
             return
@@ -166,9 +170,4 @@ class CardView: UIView {
             }
         })
     }
-    
-    required init?(coder: NSCoder) {
-        fatalError()
-    }
-
 }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7899E2ED23696BDB0009E252 /* Advertister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7899E2EC23696BDB0009E252 /* Advertister.swift */; };
+		7899E2EF2369DDA50009E252 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7899E2EE2369DDA50009E252 /* RegistrationViewController.swift */; };
 		78A81BA82368078100ED22ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A81BA72368078100ED22ED /* AppDelegate.swift */; };
 		78A81BAA2368078200ED22ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A81BA92368078200ED22ED /* SceneDelegate.swift */; };
 		78A81BAC2368078200ED22ED /* HomeControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A81BAB2368078200ED22ED /* HomeControler.swift */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		7899E2EC23696BDB0009E252 /* Advertister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advertister.swift; sourceTree = "<group>"; };
+		7899E2EE2369DDA50009E252 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		78A81BA42368078100ED22ED /* Tinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78A81BA72368078100ED22ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78A81BA92368078200ED22ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				78A81BB02368078400ED22ED /* Assets.xcassets */,
 				78A81BB22368078400ED22ED /* LaunchScreen.storyboard */,
 				78A81BB52368078400ED22ED /* Info.plist */,
+				7899E2EE2369DDA50009E252 /* RegistrationViewController.swift */,
 			);
 			path = Tinder;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 				78A81BC42368596B00ED22ED /* CardView.swift in Sources */,
 				78A81BC023683BA800ED22ED /* HomeBottomControllsStackView.swift in Sources */,
 				78A81BAC2368078200ED22ED /* HomeControler.swift in Sources */,
+				7899E2EF2369DDA50009E252 /* RegistrationViewController.swift in Sources */,
 				78A81BA82368078100ED22ED /* AppDelegate.swift in Sources */,
 				78A81BC72368C53200ED22ED /* User.swift in Sources */,
 				7899E2ED23696BDB0009E252 /* Advertister.swift in Sources */,
