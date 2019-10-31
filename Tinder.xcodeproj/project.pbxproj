@@ -10,6 +10,7 @@
 		7899E2ED23696BDB0009E252 /* Advertister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7899E2EC23696BDB0009E252 /* Advertister.swift */; };
 		7899E2EF2369DDA50009E252 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7899E2EE2369DDA50009E252 /* RegistrationViewController.swift */; };
 		7899E2F12369E14E0009E252 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7899E2F02369E14E0009E252 /* CustomTextField.swift */; };
+		7899E2F3236B29C70009E252 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7899E2F2236B29C70009E252 /* RegistrationViewModel.swift */; };
 		78A81BA82368078100ED22ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A81BA72368078100ED22ED /* AppDelegate.swift */; };
 		78A81BAA2368078200ED22ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A81BA92368078200ED22ED /* SceneDelegate.swift */; };
 		78A81BAC2368078200ED22ED /* HomeControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A81BAB2368078200ED22ED /* HomeControler.swift */; };
@@ -28,6 +29,7 @@
 		7899E2EC23696BDB0009E252 /* Advertister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advertister.swift; sourceTree = "<group>"; };
 		7899E2EE2369DDA50009E252 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		7899E2F02369E14E0009E252 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		7899E2F2236B29C70009E252 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		78A81BA42368078100ED22ED /* Tinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78A81BA72368078100ED22ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78A81BA92368078200ED22ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				78A81BCA2369668900ED22ED /* CardViewModel.swift */,
+				7899E2F2236B29C70009E252 /* RegistrationViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 				7899E2ED23696BDB0009E252 /* Advertister.swift in Sources */,
 				78A81BC223683E5900ED22ED /* TopNavigationStackView.swift in Sources */,
 				7899E2F12369E14E0009E252 /* CustomTextField.swift in Sources */,
+				7899E2F3236B29C70009E252 /* RegistrationViewModel.swift in Sources */,
 				78A81BBD23680A1600ED22ED /* Extensions+UIView.swift in Sources */,
 				78A81BAA2368078200ED22ED /* SceneDelegate.swift in Sources */,
 				78A81BCB2369668900ED22ED /* CardViewModel.swift in Sources */,
